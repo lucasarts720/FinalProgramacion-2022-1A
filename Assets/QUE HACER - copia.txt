@@ -1,0 +1,53 @@
+1) CREAR UN MODELO DEL JUGADOR
+
+Usado el Sprite del alien cremita
+
+2) QUE TENGA TORSO / PIERNAS
+
+Se resolvio modificando un Script de "PlayerMovement"
+
+/// tener en cuenta el USO de PLAYER.PREFS y TAMBIEN el USO de ScriptableObjects (en este caso, PerScriptable - Personaje Scriptable)
+
+3) CREAR UN SCRIPT NUEVO DE "SALTO" - ponerlo en las PIERNAS
+
+En el nuevo Script de PlayerMovement
+
+4) CREAR UN SCRIPT NUEVO DE "MOVIMIENTO" - ponerlo en el TORSO
+
+En el nuevo Script de PlayerMovement
+
+5) CREAR UN SCRIPT NUEVO DE "ESTADO" - ponerlo en el TORSO.
+
+/// el ESTADO seria la vida, los colliders, y buffs.
+
+6) CREAR UN SCRIPT NUEVO DE "ATAQUE"- finalmente.
+
+7) CREAR UN SCRIPT NUEVO DE "LevelManager"
+
+Hecho
+
+/// tener en cuenta el USO de PLAYER.PREFS
+
+8) CREAR UN SCRIPT NUEVO DE "ENEMIGOS"
+
+Creado Script de Obstaculo
+
+/// tener en cuenta el USO de ScriptableObjects (en este caso, PerScriptable - Personaje Scriptable)
+
+9) CREAR UN SCRIPT NUEVO DE ITEMS
+
+/// tener en cuenta el USO de ScriptableObjects (en este caso, ItemScriptable - Objetos Scripteables)
+/// para cambiar: Vida Maxima, Curar(vida actual), Daño, Saltos Extra, Dashes, Recuperar Municion, Ataques+Potentes, etc.}
+
+10) REVISAR QUE MAS AGREGAR.
+
+11) ESCENA DE VICTORIA / DERROTA.
+
+12) SELECTOR DE NIVELES
+
+13) DISEÑAR UN JEFE (Si Mati no lo hizo)
+
+14) APRENDER A USAR EVENTOS y usarlos para que aparezca texto o que se abran puertas secretas
+/// Tambien para la aparicion de EVENTOS como Encender o Apagar una luz (se puede hacer IsEnable con una zona entera, con un gameobject padre Emtpy y poner las Tiles dentro)
+
+Paso Final. Eliminar la carpeta "/Viejos" dentro de "/Scripts".

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 252971cebcf7d9a4f93c736a51fa5ef0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pepito: {fileID: 11400000, guid: ddb2a0150ee64e943ad90c62fd45311f, type: 2}
+  - rb: {instanceID: 0}
+  - vidaNumero: {instanceID: 0}
+  - vidaBarra: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
