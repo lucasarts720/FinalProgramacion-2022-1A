@@ -514,9 +514,10 @@ GameObject:
   - component: {fileID: 811725033}
   - component: {fileID: 811725034}
   - component: {fileID: 811725030}
+  - component: {fileID: 811725031}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -550,8 +551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  stamina: 100
-  staminaMax: 100
+  stamina: 50
+  staminaMax: 50
   staminaRegen: 25
   dashSpeed: 4
   dashConsumption: 10
@@ -560,6 +561,20 @@ MonoBehaviour:
   jumpHeight: 5
   jumpConsumption: 10
   jumpMin: 0
+--- !u!114 &811725031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811725028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299c738c381695440953956705b8c809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthMax: 100
 --- !u!61 &811725032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -701,10 +716,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a750a4db89c434889662905eee1abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 2800000, guid: afb75ad4dff1bf541a54f6420aaadbc3, type: 3}
+  map: {fileID: 2800000, guid: fe7879c482315c941ab1eead03011f44, type: 3}
   colorMappings:
   - color: {r: 0, g: 0, b: 0, a: 1}
     prefab: {fileID: 4497393150726626358, guid: 82963bf4e1b2a064393190c8ab15ca62, type: 3}
+  - color: {r: 1, g: 1, b: 0, a: 1}
+    prefab: {fileID: 6326063878863440908, guid: cbda9fef4db26c24a8a7eea9567bdb5b, type: 3}
+  - color: {r: 0.39215687, g: 1, b: 0, a: 1}
+    prefab: {fileID: 8995504766270336259, guid: 9a2a4c11e768d3f40a06d2f9a4ffa454, type: 3}
+  - color: {r: 1, g: 0, b: 0, a: 1}
+    prefab: {fileID: 830952701960080958, guid: 7a261b17d02501043a6397ed4a332fa0, type: 3}
 --- !u!1 &1109701454
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061666538}
+  - component: {fileID: 2061666539}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -993,3 +1015,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2061666539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061666537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c972f74d438dc1945b6ba619793a08c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIon: 1
+  timer: {fileID: 0}
+  panelLose: {fileID: 0}
+  panelWin: {fileID: 0}
+  player: {fileID: 0}

@@ -20,8 +20,6 @@ public class Player : MonoBehaviour
     public void GetDMG(int dmg)
     {
         health = health - dmg;
-        if(health <= 0) {
-            PlayerDie?.Invoke();
-        }
+        if(health <= 0)PlayerDie?.Invoke();
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LvlMgr : MonoBehaviour
 {
-    public bool UIon = true;
+    public bool UiOn = true;
     public Text timer;
     public GameObject panelLose;
     public GameObject panelWin;
@@ -23,7 +23,7 @@ public class LvlMgr : MonoBehaviour
     }
     private void Update()
     {
-        if (isPlaying == true && UIon)
+        if (isPlaying == true && UiOn)
         {
             time += Time.deltaTime;
             DisplayUI(time);

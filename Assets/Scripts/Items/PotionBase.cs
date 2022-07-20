@@ -5,11 +5,28 @@ using UnityEngine;
 public abstract class PotionBase : MonoBehaviour
 {
     protected Player player;
-    
-    private void Start()
+    protected PlayerMovement playermovement;
+    [SerializeField] protected int RotatorX, RotatorY, RotatorZ;
+
+    protected void OnCollisionEnter2D(Collision2D collision)
     {
-        player = FindObjectOfType<Player>();
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            player = collision.gameObject.GetComponent<Player>();
+            playermovement = collision.gameObject.GetComponent<PlayerMovement>();
+            PotionEffect();
+            Destroy(this.gameObject);
+        }
     }
 
-    protected abstract void Effect();
+    protected void Update()
+    {
+        rotator(RotatorX,RotatorY,RotatorZ);
+    }
+    protected void rotator(int x, int y, int z)
+    {
+        transform.Rotate(new Vector3(x,y,z) * Time.deltaTime);
+    }
+
+    protected abstract void PotionEffect();
 }
