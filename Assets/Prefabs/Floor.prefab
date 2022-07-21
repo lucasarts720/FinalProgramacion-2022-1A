@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4497393150726626344}
   - component: {fileID: -7299359835146244265}
   m_Layer: 0
-  m_Name: Piso
+  m_Name: Floor
   m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
